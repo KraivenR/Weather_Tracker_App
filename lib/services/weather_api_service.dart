@@ -2,8 +2,10 @@ import 'package:dio/dio.dart';
 import 'package:weather_tracker/models/weather_model.dart';
 
 class WeatherService {
-  static const String apiKey = 'c981e3ba451829260092d58e41291bc2';
-   
+  // Replace the value below with your own OpenWeatherMap API key.
+  // Get one at: https://openweathermap.org/api
+  static const String apiKey = 'api_key';
+
   static final Dio dio = Dio();
 
   static Future<WeatherModel> getWeather(String cityName) async {
